@@ -3,6 +3,9 @@ export default {
   content: [],
   theme: {
     extend: {
+      colors: {
+        brand: "#ff0000",
+      }
       // fontFamily: {
       //   sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       // },

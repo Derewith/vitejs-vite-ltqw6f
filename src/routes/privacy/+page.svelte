@@ -1,0 +1,1 @@
+<h1>PRIVACY PAGE</h1>
