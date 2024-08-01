@@ -35,7 +35,6 @@ declare module '$env/static/private' {
 	export const ChocolateyInstall: string;
 	export const ChocolateyLastPathUpdate: string;
 	export const CHROME_CRASHPAD_PIPE_NAME: string;
-	export const CHROME_RESTART: string;
 	export const COLORTERM: string;
 	export const CommonProgramFiles: string;
 	export const CommonProgramW6432: string;
@@ -48,6 +47,7 @@ declare module '$env/static/private' {
 	export const HOMEDRIVE: string;
 	export const HOMEPATH: string;
 	export const INIT_CWD: string;
+	export const JD2_HOME: string;
 	export const KEYSHOT11: string;
 	export const LANG: string;
 	export const LOCALAPPDATA: string;
@@ -80,15 +80,18 @@ declare module '$env/static/private' {
 	export const npm_node_execpath: string;
 	export const npm_package_dependencies__sveltejs_kit: string;
 	export const npm_package_devDependencies_autoprefixer: string;
+	export const npm_package_devDependencies_gh_pages: string;
 	export const npm_package_devDependencies_postcss: string;
 	export const npm_package_devDependencies_svelte: string;
 	export const npm_package_devDependencies_tailwindcss: string;
 	export const npm_package_devDependencies_vite: string;
+	export const npm_package_devDependencies__sveltejs_adapter_static: string;
 	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 	export const npm_package_name: string;
 	export const npm_package_private: string;
 	export const npm_package_readmeFilename: string;
 	export const npm_package_scripts_build: string;
+	export const npm_package_scripts_deploy: string;
 	export const npm_package_scripts_dev: string;
 	export const npm_package_scripts_preview: string;
 	export const npm_package_type: string;
@@ -102,6 +105,7 @@ declare module '$env/static/private' {
 	export const OS: string;
 	export const Path: string;
 	export const PATHEXT: string;
+	export const PNPM_HOME: string;
 	export const PROCESSOR_ARCHITECTURE: string;
 	export const PROCESSOR_IDENTIFIER: string;
 	export const PROCESSOR_LEVEL: string;
@@ -173,7 +177,6 @@ declare module '$env/dynamic/private' {
 		ChocolateyInstall: string;
 		ChocolateyLastPathUpdate: string;
 		CHROME_CRASHPAD_PIPE_NAME: string;
-		CHROME_RESTART: string;
 		COLORTERM: string;
 		CommonProgramFiles: string;
 		CommonProgramW6432: string;
@@ -186,6 +189,7 @@ declare module '$env/dynamic/private' {
 		HOMEDRIVE: string;
 		HOMEPATH: string;
 		INIT_CWD: string;
+		JD2_HOME: string;
 		KEYSHOT11: string;
 		LANG: string;
 		LOCALAPPDATA: string;
@@ -218,15 +222,18 @@ declare module '$env/dynamic/private' {
 		npm_node_execpath: string;
 		npm_package_dependencies__sveltejs_kit: string;
 		npm_package_devDependencies_autoprefixer: string;
+		npm_package_devDependencies_gh_pages: string;
 		npm_package_devDependencies_postcss: string;
 		npm_package_devDependencies_svelte: string;
 		npm_package_devDependencies_tailwindcss: string;
 		npm_package_devDependencies_vite: string;
+		npm_package_devDependencies__sveltejs_adapter_static: string;
 		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 		npm_package_name: string;
 		npm_package_private: string;
 		npm_package_readmeFilename: string;
 		npm_package_scripts_build: string;
+		npm_package_scripts_deploy: string;
 		npm_package_scripts_dev: string;
 		npm_package_scripts_preview: string;
 		npm_package_type: string;
@@ -240,6 +247,7 @@ declare module '$env/dynamic/private' {
 		OS: string;
 		Path: string;
 		PATHEXT: string;
+		PNPM_HOME: string;
 		PROCESSOR_ARCHITECTURE: string;
 		PROCESSOR_IDENTIFIER: string;
 		PROCESSOR_LEVEL: string;
