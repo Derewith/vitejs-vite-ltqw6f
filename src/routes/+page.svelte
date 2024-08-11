@@ -22,7 +22,7 @@
       </a>
     </div>
     <div class="lg:mt-0 lg:col-span-5 lg:flex">
-      <img src="public/main-2.png" alt="mockup" />
+      <img src="./public/main-2.png" alt="mockup" />
     </div>
   </div>
 </section>
@@ -32,7 +32,7 @@
     class="grid max-w-screen-xl md:px-4 md:py-8 px-4 py-8 mx-auto lg:grid-cols-12 gap-2"
   >
     <div class="lg:mt-0 lg:col-span-5 lg:flex">
-      <img src="public/main.png" alt="mockup" />
+      <img src="./public/main.png" alt="mockup" />
     </div>
     <div class="mr-auto place-self-center lg:col-span-7">
       <h1
