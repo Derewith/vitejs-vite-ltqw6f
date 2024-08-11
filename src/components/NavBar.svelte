@@ -1,7 +1,11 @@
 <script>
+  // data-taos-offset="200"
+  // delay-[150ms] duration-[600ms] taos:translate-y-[100%] taos:visible
 </script>
 
-<nav class="wrapper">
+<nav
+  class="wrapper bg-brandbg "
+>
   <div class="wrapper-inside">
     <div class="logo-ctn">
       <a href="/" class="logo-wrapper">
@@ -57,7 +61,8 @@
     <li>
       <a
         href="/who"
-        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">Su di noi</a
+        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100"
+        >Su di noi</a
       >
     </li>
     <li>
@@ -94,7 +99,6 @@
     position: sticky;
     display: flex;
     top: 0px;
-    background-color: white;
     -webkit-box-align: center;
     align-items: center;
     margin-bottom: 1.5rem;

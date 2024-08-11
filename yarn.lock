@@ -1430,6 +1430,11 @@ svelte@^4.2.17:
     magic-string "^0.30.4"
     periscopic "^3.1.0"
 
+tailwindcss-animated@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss-animated/-/tailwindcss-animated-1.1.2.tgz#cc8aabe5b371abdf20a195809785b3dbf34adcd5"
+  integrity sha512-SI4owS5ojserhgEYIZA/uFVdNjU2GMB2P3sjtjmFA52VxoUi+Hht6oR5+RdT+CxrX9cNNYEa+vbTWHvN9zbj3w==
+
 tailwindcss@^3.4.4:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.4.tgz#351d932273e6abfa75ce7d226b5bf3a6cb257c05"
@@ -1457,6 +1462,11 @@ tailwindcss@^3.4.4:
     postcss-selector-parser "^6.0.11"
     resolve "^1.22.2"
     sucrase "^3.32.0"
+
+taos@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/taos/-/taos-1.0.5.tgz#4669ad23455c2464dc7475b212ee63d015463de9"
+  integrity sha512-JSwR+ldec2dSjOnssN/VGjXSR44DbzUVeAXRDVEuMsc7xndx8ePcQ4QMAMUAL5V4KN1wlmhumyQ7aSykDf8uhw==
 
 thenify-all@^1.0.0:
   version "1.6.0"

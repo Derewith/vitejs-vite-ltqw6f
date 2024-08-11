@@ -1,8 +1,10 @@
 <script>
+// @ts-nocheck
+
     import { page } from "$app/stores";
 </script>
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-brandbg dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
             <h1

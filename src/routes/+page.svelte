@@ -1,10 +1,10 @@
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-brandbg">
   <div
     class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 gap-2"
   >
     <div class="mr-auto place-self-center lg:col-span-7">
       <h1
-        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+        class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
       >
         Il tuo scontrino digitale
       </h1>
@@ -16,7 +16,7 @@
       </p>
       <a
         href="/contact"
-        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 w-full md:w-auto"
+        class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 w-full md:w-auto"
       >
         Contatta i nostri Venditori
       </a>
@@ -27,7 +27,7 @@
   </div>
 </section>
 
-<section class="" style="background-color:#e95f3b">
+<section style="background-color:#e95f3b">
   <div
     class="grid max-w-screen-xl md:px-4 md:py-8 px-4 py-8 mx-auto lg:grid-cols-12 gap-2"
   >
@@ -35,7 +35,9 @@
       <img src="public/main.png" alt="mockup" />
     </div>
     <div class="mr-auto place-self-center lg:col-span-7">
-      <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+      <h1
+        class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+      >
         Ogni giorno vengono sprecati chilometri di carta
       </h1>
       <p class="mb-5 font-light text-gray-100 sm:text-xl">
@@ -46,11 +48,10 @@
   </div>
 </section>
 
-
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-brandbg">
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     <h2
-      class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      class="inter-font mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
     >
       Ridurre lo spreco può diventare un gesto semplice e alla portata di tutti!
       Ma come?
@@ -59,7 +60,7 @@
       class="grid gap-6 pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2"
     >
       <div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -84,7 +85,7 @@
             lo spreco di carta degli scontrini tradizionali.
           </p>
         </div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -109,7 +110,7 @@
             contribuendo a ridurre lo spreco di carta.
           </p>
         </div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -135,7 +136,7 @@
             e partecipare a iniziative eco-friendly.
           </p>
         </div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -163,7 +164,7 @@
         </div>
       </div>
       <div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -189,7 +190,7 @@
             contribuire a ridurre lo spreco di carta.
           </p>
         </div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -214,7 +215,7 @@
             massima sicurezza e privacy per tutti i nostri utenti.
           </p>
         </div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -240,7 +241,7 @@
             partecipanti direttamente nell'app.
           </p>
         </div>
-        <div class="mb-6 max-h-14">
+        <div class="mb-6">
           <h3
             class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
           >
@@ -272,7 +273,7 @@
   </div>
 </section>
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-brandbg">
   <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
     <figure class="max-w-screen-md mx-auto">
       <svg
@@ -316,11 +317,11 @@
   </div>
 </section>
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-brandbg">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div class="mx-auto max-w-screen-md sm:text-center">
       <h2
-        class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white"
+        class="inter-font mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white"
       >
         Iscriviti alla nostra newsletter
       </h2>
