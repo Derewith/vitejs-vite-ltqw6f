@@ -17,8 +17,9 @@ export default {
       precompress: false,
       strict: false
     }),
+    appDir: 'app',
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '' : '',
+      base: process.env.NODE_ENV === 'production' ? '/vitejs-vite-ltqw6f' : ''
     }
   }
 }
