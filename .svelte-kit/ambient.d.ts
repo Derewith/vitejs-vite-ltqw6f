@@ -51,7 +51,6 @@ declare module '$env/static/private' {
 	export const KEYSHOT11: string;
 	export const LANG: string;
 	export const LOCALAPPDATA: string;
-	export const LOCAL_GIT_DIRECTORY: string;
 	export const LOGONSERVER: string;
 	export const Medit_CHITUBOX_Basic_Bridge: string;
 	export const NDI_RUNTIME_DIR_V2: string;
@@ -135,7 +134,6 @@ declare module '$env/static/private' {
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
-	export const VSCODE_INJECTION: string;
 	export const windir: string;
 	export const YARN_WRAP_OUTPUT: string;
 	export const __PSLockDownPolicy: string;
@@ -195,7 +193,6 @@ declare module '$env/dynamic/private' {
 		KEYSHOT11: string;
 		LANG: string;
 		LOCALAPPDATA: string;
-		LOCAL_GIT_DIRECTORY: string;
 		LOGONSERVER: string;
 		Medit_CHITUBOX_Basic_Bridge: string;
 		NDI_RUNTIME_DIR_V2: string;
@@ -279,7 +276,6 @@ declare module '$env/dynamic/private' {
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		VSCODE_GIT_IPC_HANDLE: string;
-		VSCODE_INJECTION: string;
 		windir: string;
 		YARN_WRAP_OUTPUT: string;
 		__PSLockDownPolicy: string;
