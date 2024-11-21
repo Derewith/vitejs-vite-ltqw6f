@@ -46,18 +46,18 @@
 
     <!-- <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script> -->
     
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/start.DjPMbE8-.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/entry.hLFVXi6a.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/scheduler.-ZrTCJr1.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/app.CLFcgNNt.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/index.BxGaHbrI.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/start.B13-k5da.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/entry.SDVxqpGG.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/scheduler.-uejo_JO.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/app.BZU2eYds.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/index.DDKChHgk.js">
   </head>
 
   <body>
     
 			<script>
 				{
-					__sveltekit_jj93sg = {
+					__sveltekit_gq1fx7 = {
 						base: "/vitejs-vite-ltqw6f",
 						assets: "/vitejs-vite-ltqw6f"
 					};
@@ -65,8 +65,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/vitejs-vite-ltqw6f/app/immutable/entry/start.DjPMbE8-.js"),
-						import("/vitejs-vite-ltqw6f/app/immutable/entry/app.CLFcgNNt.js")
+						import("/vitejs-vite-ltqw6f/app/immutable/entry/start.B13-k5da.js"),
+						import("/vitejs-vite-ltqw6f/app/immutable/entry/app.BZU2eYds.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
@@ -78,7 +78,6 @@
         // wait for the document to be loaded and rendered in svelte
         const { animate, scroll } = Motion;
         document.querySelectorAll("section > div").forEach((item) => {
-          console.log("item", item);
           scroll(animate(item, { opacity: [0, 1, 1, 0] }, { ease: "linear" }), {
             target: item,
             offset: ["start end", "end end", "start start", "end start"],
