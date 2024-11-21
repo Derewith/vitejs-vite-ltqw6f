@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="/vitejs-vite-ltqw6f/css/app.css" rel="stylesheet" /> -->
+    <!-- <link
+      href="https://unpkg.com/@fortawesome/fontawesome-free@6.7.1/css/brands.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://unpkg.com/@fortawesome/fontawesome-free@6.7.1/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link href="/vitejs-vite-ltqw6f/css/app.css" rel="stylesheet" /> -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png" />
-  <link rel="manifest" href="./public/site.webmanifest" />
-  <script>document.documentElement.classList.add('js')</script>
-  <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
-  
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/start.Cwd0fn68.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/entry.CDixq8RM.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/scheduler.Ce_0Mfso.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/app.w0PkWySG.js">
-		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/index.BNqJhPoz.js">
-</head>
+    <!-- <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script> -->
+    
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/start.DjPMbE8-.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/entry.hLFVXi6a.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/scheduler.-ZrTCJr1.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/entry/app.CLFcgNNt.js">
+		<link rel="modulepreload" href="/vitejs-vite-ltqw6f/app/immutable/chunks/index.BxGaHbrI.js">
+  </head>
 
-<body>
-  
+  <body>
+    
 			<script>
 				{
-					__sveltekit_11jyccb = {
+					__sveltekit_jj93sg = {
 						base: "/vitejs-vite-ltqw6f",
 						assets: "/vitejs-vite-ltqw6f"
 					};
@@ -34,14 +65,26 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/vitejs-vite-ltqw6f/app/immutable/entry/start.Cwd0fn68.js"),
-						import("/vitejs-vite-ltqw6f/app/immutable/entry/app.w0PkWySG.js")
+						import("/vitejs-vite-ltqw6f/app/immutable/entry/start.DjPMbE8-.js"),
+						import("/vitejs-vite-ltqw6f/app/immutable/entry/app.CLFcgNNt.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
 				}
 			</script>
 		
-</body>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // wait for the document to be loaded and rendered in svelte
+        const { animate, scroll } = Motion;
+        document.querySelectorAll("section > div").forEach((item) => {
+          console.log("item", item);
+          scroll(animate(item, { opacity: [0, 1, 1, 0] }, { ease: "linear" }), {
+            target: item,
+            offset: ["start end", "end end", "start start", "end start"],
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
