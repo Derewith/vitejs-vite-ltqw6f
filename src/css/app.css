@@ -133,6 +133,7 @@ body[data-scroll-locked] {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 20px 12px;
 }
 
 .logo-ctn {
@@ -187,10 +188,6 @@ body[data-scroll-locked] {
   padding-inline: 1rem;
 }
 
-/* .menu-last {
-  display: none;
-} */
-
 @media (prefers-reduced-motion: no-preference) {
   .wrapper {
     transition-property: transform, box-shadow;
@@ -241,9 +238,6 @@ body[data-scroll-locked] {
   }
 }
 @media (min-width: 1200px) {
-  .wrapper-inside {
-    /* width: 1140px; */
-  }
   .menu-item {
     padding: 0.7rem 1rem;
   }

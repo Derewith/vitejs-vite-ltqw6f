@@ -87,7 +87,7 @@
       loop: true,
       grabCursor: true,
       autoplay: {
-        delay: 10000,
+        delay: 1200,
         disableOnInteraction: false,
         pauseOnMouseEnter: false,
         stopOnLastSlide: false,

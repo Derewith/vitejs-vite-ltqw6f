@@ -152,9 +152,14 @@
     font-size: 0.7rem;
   }
 
+  .footer_socials {
+    margin-top: 1rem;
+  }
+
   .footer_socials ul li {
-    font-size: 22px;
-    margin: 15px 15px 0;
+    font-size: 25px;
+    padding: 0 10px;
+    /* margin: 15px 15px 0; */
     cursor: pointer;
   }
 
