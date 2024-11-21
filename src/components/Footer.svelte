@@ -6,37 +6,13 @@
     <div class="footer_logo">
       <img src="public/logo.png" alt="logo" height="30" width="90" />
     </div>
-    <div class="footer_grid">
+    <div class="footer_grid flex-col">
       <div class="footer_grid_col grid_col">
-        <p class="footer_grid_title">Whynot</p>
-        <ul class="footer_grid_content">
-          <li><a href="/who/">Chi siamo</a></li>
-          <li><a href="/team/">Team</a></li>
-          <li>
-            <a href="/invest/" target="_blank" rel="noopener noreferrer"
-              >Investi in noi</a
-            >
-          </li>
-          <li>
-            <a href="/media" target="_blank" rel="noopener noreferrer"
-              >Stampa &amp; Media</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="footer_grid_col grid_col">
-        <p class="footer_grid_title">Per le Aziende</p>
         <ul class="footer_grid_content">
           <li><a href="/collaboration/">Collabora con noi</a></li>
           <li>
             <a href="/personalized-solutions/">Soluzioni personalizzate</a>
           </li>
-          <li><a href="/integrations/">Integrazioni</a></li>
-        </ul>
-      </div>
-      <div class="footer_grid_col grid_col">
-        <p class="footer_grid_title">Condizioni</p>
-        <ul class="footer_grid_content">
           <li><a href="/legal/">Legal</a></li>
           <li><a href="/privacy/">Privacy</a></li>
         </ul>
@@ -99,6 +75,7 @@
   .grid_col {
     position: relative;
     width: 100%;
+    text-align: center;
   }
 
   @media (min-width: 576px) {
@@ -116,6 +93,10 @@
   }
 
   .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0px 20px 2rem;
     margin-right: auto;
     margin-left: auto;
@@ -127,17 +108,18 @@
   .footer_grid {
     display: flex;
     margin-top: -24px;
-    margin-inline: -15px;
+    /* margin-inline: -15px; */
     padding-top: 1.5rem;
   }
 
   .footer_grid_col {
-    margin-top: 24px;
+    margin-top: 14px;
     padding-inline: 15px;
   }
 
   .footer_grid_title {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 0.5rem;
   }
@@ -154,25 +136,25 @@
   }
 
   .footer_grid_content li a {
-    font-size: 0.9rem;
-    font-weight: 300;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
     color: white !important;
   }
 
   .footer_line {
+    width: 50%;
     height: 1px;
     background-color: rgb(238, 238, 238);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   .footer_text {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .footer_socials ul li {
     font-size: 22px;
-    margin: 0 10px;
+    margin: 15px 15px 0;
     cursor: pointer;
   }
 

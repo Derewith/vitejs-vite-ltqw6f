@@ -3,7 +3,17 @@
   import { onMount } from "svelte";
 
   import Swiper from "swiper";
-  import { Navigation, Pagination } from "swiper/modules";
+  import {
+    Autoplay,
+    EffectCards,
+    EffectCoverflow,
+    EffectCreative,
+    EffectCube,
+    EffectFade,
+    EffectFlip,
+    Navigation,
+    Pagination,
+  } from "swiper/modules";
   import "swiper/css";
   import "swiper/css/navigation";
   import "swiper/css/pagination";
@@ -47,7 +57,7 @@
   ];
 
   onMount(() => {
-    const swiper = new Swiper(".swiper", {
+    new Swiper(".swiper", {
       modules: [Navigation, Pagination],
       slidesPerView: "auto",
       spaceBetween: 24,
@@ -60,6 +70,7 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      loop: true,
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -69,92 +80,115 @@
         },
       },
     });
+
+    new Swiper(".swiper-2", {
+      modules: [Autoplay],
+      slidesPerView: 1,
+      loop: true,
+      grabCursor: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+        stopOnLastSlide: false,
+        waitForTransition: false,
+      },
+    });
   });
 </script>
 
-<section class="bg-brandbg">
-  <div
-    class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 gap-2"
-  >
-    <div class="mr-auto place-self-center lg:col-span-7">
-      <h1
-        class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
-      >
-        Il tuo scontrino digitale
-      </h1>
-      <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
-        Ci pensi mai a quanti scontrini vengano stampati ogni giorno nel mondo?
-        Quanti ne servirebbero realmente?
-      </p>
-      <a
-        href="/contact"
-        class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto"
-      >
-        Contatta i nostri Venditori
-      </a>
-    </div>
-    <div class="lg:mt-0 lg:col-span-5 lg:flex">
-      <img src="./public/main-2.png" alt="mockup" />
+<div class="overflow-hidden">
+  <div class="relative">
+    <div class="swiper-2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section class="bg-brandbg wrapper-inside">
+            <div class="flex flex-col lg:flex-row gap-4">
+              <div class="">
+                <h1
+                  class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+                >
+                  Il tuo scontrino digitale
+                </h1>
+                <p
+                  class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl"
+                >
+                  Ci pensi mai a quanti scontrini vengano stampati ogni giorno
+                  nel mondo? Quanti ne servirebbero realmente?
+                </p>
+                <a
+                  href="/contact"
+                  class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto"
+                >
+                  Contatta i nostri Venditori
+                </a>
+              </div>
+              <div class="">
+                <img src="./public/main-2.png" alt="mockup" />
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="bg-brandbg wrapper-inside">
+            <div class="flex flex-col lg:flex-row gap-4">
+              <div class="">
+                <h1
+                  class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+                >
+                  Facendo la spesa con WhyNot guadagnerai punti foresta!
+                </h1>
+                <p class="mb-5 font-light sm:text-xl">
+                  Potrai utilizzarli per sconti e iniziative. Ogni punto foresta
+                  equivale a circa 1m di scontrini risparmiati solo e soltanto
+                  grazie al tuo contributo.
+                </p>
+              </div>
+              <div class="">
+                <img src="./public/main.png" alt="mockup" />
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="bg-brandbg wrapper-inside">
+            <div
+              class="flex flex-col lg:flex-row gap-4"
+            >
+              <div class="">
+                <h1
+                  class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+                >
+                  Ogni giorno vengono sprecati chilometri di carta
+                </h1>
+                <p class="mb-5 font-light sm:text-xl">
+                  Gran parte dei quali sono scontrini di bar o supermercati,
+                  presi in mano e subito dopo gettati nel cestino.
+                </p>
+              </div>
+              <div class="">
+                <img src="./public/main-3.png" alt="mockup" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
   </div>
-</section>
+</div>
 
-<section style="background-color:#e95f3b">
-  <div
-    class="grid max-w-screen-xl md:px-4 md:py-8 px-4 py-8 mx-auto lg:grid-cols-12 gap-2"
-  >
-    <div class="lg:mt-0 lg:col-span-5 lg:flex">
-      <img src="./public/main.png" alt="mockup" />
-    </div>
-    <div class="mr-auto place-self-center lg:col-span-7">
-      <h1
-        class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
-      >
-        Facendo la spesa con WhyNot guadagnerai punti foresta!
-      </h1>
-      <p class="mb-5 font-light text-gray-100 sm:text-xl">
-        Potrai utilizzarli per sconti e iniziative. Ogni punto foresta equivale
-        a circa 1m di scontrini risparmiati solo e soltanto grazie al tuo
-        contributo.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="bg-brandbg">
-  <div
-    class="grid max-w-screen-xl md:px-4 md:py-8 px-4 py-8 mx-auto lg:grid-cols-12 gap-2"
-  >
-    <div class="mr-auto place-self-center lg:col-span-7">
-      <h1
-        class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
-      >
-        Ogni giorno vengono sprecati chilometri di carta
-      </h1>
-      <p class="mb-5 font-light sm:text-xl">
-        Gran parte dei quali sono scontrini di bar o supermercati, presi in mano
-        e subito dopo gettati nel cestino.
-      </p>
-    </div>
-    <div class="lg:mt-0 lg:col-span-5 lg:flex">
-      <img src="./public/main-3.png" alt="mockup" />
-    </div>
-  </div>
-</section>
-
-<section class="bg-brandbg">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+<section class="my-6">
+  <div class="mx-auto max-w-screen-xl">
     <div class="relative">
       <!-- Swiper Container -->
-      <div class="swiper">
-        <div class="swiper-buttons pb-8 justify-self-end">
+      <div class="swiper wrapper-inside">
+        <!-- <div class="swiper-buttons pb-8 justify-self-end">
           <div class="swiper-button-prev !text-black"></div>
           <div class="swiper-button-next !text-black"></div>
-        </div>
-
+        </div> -->
         <div class="swiper-wrapper">
           {#each faqItems as item}
-            <div class="swiper-slide" style="width: 320px">
+            <div class="swiper-slide" style="width: auto">
               <div
                 class="flex flex-col h-full p-6 bg-white border border-gray-200 transition-colors duration-250"
               >
@@ -228,7 +262,6 @@
     </figure>
   </div>
 </section>
-
 
 <style lang="postcss">
   /* Personalizza i colori dei bottoni di navigazione */
