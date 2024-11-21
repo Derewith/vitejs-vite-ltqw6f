@@ -7,7 +7,7 @@
 
 </script>
 
-<div style="background-color:#e95f3b">
+<div>
   <NavBar />
   <slot />
   <Footer />

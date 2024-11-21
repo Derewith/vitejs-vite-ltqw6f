@@ -48,12 +48,12 @@ select {
 }
 
 .mainbtn {
-  --bg-color: #ff3d00;
+  --bg-color: #e95f3b;
   --color: #ffffff;
   --border: none;
   border: var(--border);
-  border-radius: 0.7rem;
-  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
   transition-property: background-color, color, border-color;
   transition-duration: 200ms;
   color: var(--color);
@@ -66,9 +66,10 @@ select {
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01rem;
+  line-height: 1rem;
+  font-weight: 300;
   white-space: nowrap;
 }
 
