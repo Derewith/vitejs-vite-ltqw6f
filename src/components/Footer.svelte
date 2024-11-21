@@ -157,7 +157,7 @@
   }
 
   .footer_socials ul li {
-    font-size: 25px;
+    font-size: 40px;
     padding: 0 10px;
     /* margin: 15px 15px 0; */
     cursor: pointer;
