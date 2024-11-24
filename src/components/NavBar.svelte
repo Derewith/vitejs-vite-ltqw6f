@@ -120,26 +120,31 @@
 {/if}
 
 {#if showNewsletter}
-  <!-- svelte-ignore a11y-click-events-without-key -->
-  <!-- svelte-ignore a11y-click-events-have-key-events -->
   <!-- svelte-ignore a11y-no-static-element-interactions -->
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div class="modal-overlay" on:click={toggleNewsletter}>
     <div class="modal-content" on:click|stopPropagation>
       <button class="modal-close" on:click={toggleNewsletter}>✕</button>
       <div class="py-4 lg:py-8 px-2 lg:px-2">
         <div class="mx-auto max-w-screen-md sm:text-center">
           <h2
-            class="inter-font mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl"
+            class="inter-font mb-4 text-3xl tracking-tight font-extrabold sm:text-4xl"
           >
-            Iscriviti alla nostra newsletter
+            🌿 Unisciti a noi e fai la differenza! 🌿
           </h2>
-          <p
-            class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl"
-          >
-            Per rimanere aggiornati sui progressi della roadmap, sugli annunci e
-            sugli sconti esclusivi, non esitate a iscrivervi con la vostra
-            e-mail.
-          </p>
+          <div class="mx-auto mb-8 max-w-2xl font-light md:mb-12">
+            <p><b class="font-bold">Accesso anticipato all’app WhyNot.</b></p>
+            <p>
+              <b class="font-bold">5 Punti Foresta </b>come benvenuto,
+              equivalenti a 5 metri di scontrini risparmiati!
+            </p>
+            <p>
+              Aggiornamenti su roadmap, novità e il nostro impegno per un futuro
+              più sostenibile.
+            </p>
+            <b class="font-bold">📩 Iscriviti ora</b> e inizia a trasformare ogni
+            tua spesa in un piccolo passo per salvare il pianeta.
+          </div>
           <form action="#">
             <div
               class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0 space-x-2"
@@ -198,5 +203,4 @@
 {/if}
 
 <style>
- 
 </style>

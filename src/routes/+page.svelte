@@ -103,8 +103,10 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <section class="bg-brandbg wrapper-inside">
-            <div class="flex flex-col lg:flex-row gap-4">
-              <div class="">
+            <div
+              class="flex flex-col md:flex-row gap-4 justify-center items-center md:justify-between w-full"
+            >
+              <div class="max-w-[500px]">
                 <h1
                   class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
                 >
@@ -118,21 +120,27 @@
                 </p>
                 <a
                   href="/contact"
-                  class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto"
+                  class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto bg-white"
                 >
                   Contatta i nostri Venditori
                 </a>
               </div>
               <div class="">
-                <img src="./public/main-2.png" alt="mockup" />
+                <img
+                  src="./public/main-2.png"
+                  alt="mockup"
+                  style="height: 360px;object-fit:contain;"
+                />
               </div>
             </div>
           </section>
         </div>
         <div class="swiper-slide">
           <section class="bg-brandbg wrapper-inside">
-            <div class="flex flex-col lg:flex-row gap-4">
-              <div class="">
+            <div
+              class="flex flex-col md:flex-row gap-4 justify-center items-center md:justify-between w-full"
+            >
+              <div class="max-w-[500px]">
                 <h1
                   class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
                 >
@@ -145,7 +153,11 @@
                 </p>
               </div>
               <div class="">
-                <img src="./public/main.png" alt="mockup" />
+                <img
+                  src="./public/main.png"
+                  alt="mockup"
+                  style="height: 360px;object-fit:contain;"
+                />
               </div>
             </div>
           </section>
@@ -153,9 +165,9 @@
         <div class="swiper-slide">
           <section class="bg-brandbg wrapper-inside">
             <div
-              class="flex flex-col lg:flex-row gap-4"
+              class="flex flex-col md:flex-row gap-4 justify-between items-center md:justify-between w-full"
             >
-              <div class="">
+              <div class="max-w-[500px]">
                 <h1
                   class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
                 >
@@ -167,7 +179,11 @@
                 </p>
               </div>
               <div class="">
-                <img src="./public/main-3.png" alt="mockup" />
+                <img
+                  src="./public/main-3.png"
+                  alt="mockup"
+                  style="height: 360px;object-fit:contain;"
+                />
               </div>
             </div>
           </section>
@@ -177,14 +193,43 @@
   </div>
 </div>
 
-<div class="flex justify-center w-full">
-  
-      <iframe class="relative w-full max-w-screen-xl mx-auto" src="https://www.produzionidalbasso.com/projects/36967/widget" frameborder="0"></iframe>
-  
+<div class="wrapper-inside mt-4 mx-8 bg-brandbg gap-6">
+  <iframe
+    title="WhyNot"
+    class="relative w-full max-w-screen-xl bg-brandbg py-4 min-h-[600px] md:min-h-[700px] lg:min-h-[550px] mx-auto"
+    src="https://www.produzionidalbasso.com/projects/36967/widget"
+    frameborder="0"
+    style="width:800px;"
+  ></iframe>
+  <div
+    class="flex flex-col lg:flex-row gap-4 justify-between w-full bg-brandbg pt-4"
+  >
+    <div class="h-full flex flex-col justify-center">
+      <h2
+        class="inter-font text-xl font-extrabold md:text-2xl xl:text-5xl md:text-right"
+      >
+        Unisciti a WhyNot: Sostieni la Rivoluzione Verde! 🌍
+      </h2>
+      <div class="md:text-right mx-auto mb-8 max-w-2xl font-light mt-4">
+        <p>
+          Ogni giorno vengono sprecati chilometri di carta per gli scontrini, ma
+          con WhyNot possiamo cambiarlo. Aiutaci a portare questa app innovativa
+          nelle mani di tutti: salva gli scontrini digitalmente, riduci
+          l’impatto ambientale e guadagna Punti Foresta per sconti e premi
+          ecologici.
+        </p>
+        <p>
+          Sostieni la nostra campagna di crowdfunding e insieme costruiremo un
+          futuro più sostenibile. Ogni contributo conta per rendere WhyNot la
+          scelta digitale per milioni di persone.
+        </p>
+        <p>Fai la tua parte. Scarica WhyNot.</p>
+        Sostieni la nostra campagna di crowdfunding e insieme costruiamo un
+        futuro senza sprechi!
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
 
 <section class="my-6">
   <div class="mx-auto max-w-screen-xl">
@@ -236,6 +281,81 @@
 
 <section class="bg-brandbg">
   <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+    <div class="mx-auto max-w-screen-md sm:text-center">
+      <h2
+        class="inter-font mb-4 text-3xl tracking-tight font-extrabold sm:text-4xl"
+      >
+        🌿 Unisciti a noi e fai la differenza! 🌿
+      </h2>
+      <div class="mx-auto mb-8 max-w-2xl font-light md:mb-12">
+        <p><b class="font-bold">Accesso anticipato all’app WhyNot.</b></p>
+        <p>
+          <b class="font-bold">5 Punti Foresta </b>come benvenuto, equivalenti a 5 metri di scontrini
+          risparmiati!
+        </p>
+        <p>
+          Aggiornamenti su roadmap, novità e il nostro impegno per un futuro più
+          sostenibile.
+        </p>
+        <b class="font-bold">📩 Iscriviti ora</b> e inizia a trasformare ogni tua spesa in un piccolo passo
+        per salvare il pianeta.
+      </div>
+      <form action="#">
+        <div
+          class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0 space-x-2"
+        >
+          <div class="relative w-full">
+            <label
+              for="email"
+              class="hidden mb-2 text-sm font-medium text-gray-900">Email</label
+            >
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                ></path><path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                ></path></svg
+              >
+            </div>
+            <input
+              class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500"
+              placeholder="Inserisci la tua mail"
+              type="email"
+              id="email"
+              required
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="py-3 px-5 w-full text-sm font-medium text-center text-black rounded-lg border cursor-pointer bg-white border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
+              >Iscriviti</button
+            >
+          </div>
+        </div>
+        <div
+          class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer"
+        >
+          Abbiamo a cuore la protezione dei vostri dati. <a
+            href="/privacy"
+            class="font-medium text-primary-600 hover:underline"
+            >Leggi la nostra Privacy Policy</a
+          >.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="bg-brandbg">
+  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
     <figure class="max-w-screen-md mx-auto">
       <svg
         class="h-12 mx-auto mb-3 text-gray-400"
@@ -270,7 +390,7 @@
       </figcaption>
     </figure>
   </div>
-</section>
+</section> -->
 
 <style lang="postcss">
   /* Personalizza i colori dei bottoni di navigazione */
