@@ -9,6 +9,12 @@
   function toggleNewsletter() {
     showNewsletter = !showNewsletter;
   }
+
+  // add a function tho show automatically the newsletter modal after 15seconds
+
+  setTimeout(() => {
+    showNewsletter = true;
+  }, 15000);
 </script>
 
 <nav class="wrapper bg-brandbg">
