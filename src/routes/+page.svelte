@@ -118,12 +118,12 @@
                   Ci pensi mai a quanti scontrini vengano stampati ogni giorno
                   nel mondo? Quanti ne servirebbero realmente?
                 </p>
-                <a
+                <!-- <a
                   href="/contact"
                   class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto bg-white"
                 >
                   Contatta i nostri Venditori
-                </a>
+                </a> -->
               </div>
               <div class="">
                 <img
@@ -193,24 +193,17 @@
   </div>
 </div>
 
-<div class="wrapper-inside mt-4 mx-8 bg-brandbg gap-6">
-  <iframe
-    title="WhyNot"
-    class="relative w-full max-w-screen-xl bg-brandbg py-4 min-h-[600px] md:min-h-[700px] lg:min-h-[550px] mx-auto"
-    src="https://www.produzionidalbasso.com/projects/36967/widget"
-    frameborder="0"
-    style="width:800px;"
-  ></iframe>
+<div class="wrapper-inside lg:flex-row-reverse mt-4 mx-8 bg-brandbg gap-6">
   <div
     class="flex flex-col lg:flex-row gap-4 justify-between w-full bg-brandbg pt-4"
   >
     <div class="h-full flex flex-col justify-center">
       <h2
-        class="inter-font text-xl font-extrabold md:text-2xl xl:text-5xl md:text-right"
+        class="inter-font text-xl font-extrabold md:text-2xl xl:text-5xl md:text-left"
       >
         Unisciti a WhyNot: Sostieni la Rivoluzione Verde! 🌍
       </h2>
-      <div class="md:text-right mx-auto mb-8 max-w-2xl font-light mt-4">
+      <div class="md:text-left mx-auto mb-8 max-w-2xl font-light mt-4">
         <p>
           Ogni giorno vengono sprecati chilometri di carta per gli scontrini, ma
           con WhyNot possiamo cambiarlo. Aiutaci a portare questa app innovativa
@@ -224,11 +217,18 @@
           scelta digitale per milioni di persone.
         </p>
         <p>Fai la tua parte. Scarica WhyNot.</p>
-        Sostieni la nostra campagna di crowdfunding e insieme costruiamo un
-        futuro senza sprechi!
+        Sostieni la nostra campagna di crowdfunding e insieme costruiamo un futuro
+        senza sprechi!
       </div>
     </div>
   </div>
+  <iframe
+    title="WhyNot"
+    class="relative w-full max-w-screen-xl bg-brandbg py-4 min-h-[600px] md:min-h-[700px] lg:min-h-[550px] mx-auto"
+    src="https://www.produzionidalbasso.com/projects/36967/widget"
+    frameborder="0"
+    style="width:800px;"
+  ></iframe>
 </div>
 
 <section class="my-6">
@@ -290,15 +290,15 @@
       <div class="mx-auto mb-8 max-w-2xl font-light md:mb-12">
         <p><b class="font-bold">Accesso anticipato all’app WhyNot.</b></p>
         <p>
-          <b class="font-bold">5 Punti Foresta </b>come benvenuto, equivalenti a 5 metri di scontrini
-          risparmiati!
+          <b class="font-bold">5 Punti Foresta </b>come benvenuto, equivalenti a
+          5 metri di scontrini risparmiati!
         </p>
         <p>
           Aggiornamenti su roadmap, novità e il nostro impegno per un futuro più
           sostenibile.
         </p>
-        <b class="font-bold">📩 Iscriviti ora</b> e inizia a trasformare ogni tua spesa in un piccolo passo
-        per salvare il pianeta.
+        <b class="font-bold">📩 Iscriviti ora</b> e inizia a trasformare ogni tua
+        spesa in un piccolo passo per salvare il pianeta.
       </div>
       <form action="#">
         <div

@@ -21,11 +21,21 @@
     <div class="footer_line"></div>
     <div class="footer_socials">
       <ul>
-        <li class="fab fa-instagram">
-          <a target="_blank" href="https://www.instagram.com/whynotapp2024/">
-          </a>
-        </li>
-        <li class="fab fa-facebook">
+        <a
+          target="_blank"
+          href="https://www.youtube.com/whynotapp2024/"
+          class="text-white hover:text-white/50"
+        >
+          <li class="fab fa-youtube"></li>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/whynotapp2024/"
+          class="text-white hover:text-white/50"
+        >
+          <li class="fab fa-instagram"></li>
+        </a>
+        <!-- <li class="fab fa-facebook">
           <a target="_blank" href="https://www.facebook.com//"> </a>
         </li>
         <li class="fab fa-twitter">
@@ -33,7 +43,7 @@
         </li>
         <li class="fab fa-linkedin">
           <a target="_blank" href="https://www.linkedin.com/company//"> </a>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class="footer_text">
@@ -157,7 +167,7 @@
   }
 
   .footer_socials ul li {
-    font-size: 40px;
+    font-size: 30px;
     padding: 0 10px;
     /* margin: 15px 15px 0; */
     cursor: pointer;
