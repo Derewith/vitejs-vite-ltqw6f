@@ -15,6 +15,41 @@
   setTimeout(() => {
     showNewsletter = true;
   }, 15000);
+
+  let email = "";
+  let subscriptionStatus = "";
+  let isSubmitting = false;
+
+  async function handleSubscribe(e) {
+    e.preventDefault();
+    if (!email || isSubmitting) return;
+
+    isSubmitting = true;
+    subscriptionStatus = "";
+
+    try {
+      const response = await fetch("public/subscribe-newsletter.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        subscriptionStatus = "success";
+        email = "";
+      } else {
+        subscriptionStatus = "error";
+      }
+    } catch (error) {
+      subscriptionStatus = "error";
+    } finally {
+      isSubmitting = false;
+    }
+  }
 </script>
 
 <nav class="wrapper bg-brandbg">
@@ -24,14 +59,14 @@
         <img src="public/logo.png" alt="logo" height="30" width="90" />
       </a>
     </div>
-    <ul class="menu-ctn">
+    <!-- <ul class="menu-ctn">
       <li class="menu-item">
-        <a href="/who" target="_blank" rel="noopener noreferrer">Chi siamo</a>
+        <a href="/who" rel="noopener noreferrer">Chi siamo</a>
       </li>
       <li>
         <div class="menu-divider"></div>
       </li>
-    </ul>
+    </ul> -->
     <div class="flex items-center gap-2">
       <div class="menu-last">
         <button class="mainbtn" on:click={toggleNewsletter}>Newsletter</button>
@@ -64,7 +99,7 @@
 <div
   class={`fixed inset-y-0 right-0 transform ${
     isOpen ? "translate-x-0" : "translate-x-full"
-  } transition-transform duration-300 ease-in-out w-64 bg-brandbg shadow-lg z-20 lg:hidden`}
+  } transition-transform duration-300 ease-in-out w-64 bg-brandbg shadow-lg z-20`}
   id="navbar-default"
 >
   <div class="p-4 border-b">
@@ -79,7 +114,7 @@
     <li>
       <a href="/" class="block py-2 px-3 rounded" aria-current="page">Home</a>
     </li>
-    <li>
+    <!-- <li>
       <a
         href="/who"
         class="block py-2 px-3 text-gray-900 rounded hover:border hover:border-brand"
@@ -106,7 +141,7 @@
         class="block py-2 px-3 text-gray-900 rounded hover:border hover:border-brand"
         >Team</a
       >
-    </li>
+    </li> -->
     <li>
       <a
         href="/contact"
@@ -119,7 +154,7 @@
 
 {#if isOpen}
   <div
-    class="fixed inset-0 bg-black bg-opacity-50 z-10 lg:hidden"
+    class="fixed inset-0 bg-black bg-opacity-50 z-10"
     role="presentation"
     on:click={toggleMenu}
   ></div>
@@ -133,6 +168,17 @@
       <button class="modal-close" on:click={toggleNewsletter}>✕</button>
       <div class="py-4 lg:py-8 px-2 lg:px-2">
         <div class="mx-auto max-w-screen-md sm:text-center">
+          <div class="py-4">
+            {#if subscriptionStatus === "success"}
+              <p class="text-green-300 text-sm">
+                Iscrizione completata con successo!
+              </p>
+            {:else if subscriptionStatus === "error"}
+              <p class="text-red-300 text-sm">
+                Si è verificato un errore. Riprova più tardi.
+              </p>
+            {/if}
+          </div>
           <h2
             class="inter-font mb-4 text-3xl tracking-tight font-extrabold sm:text-4xl"
           >
@@ -151,7 +197,7 @@
             <b class="font-bold">📩 Iscriviti ora</b> e inizia a trasformare ogni
             tua spesa in un piccolo passo per salvare il pianeta.
           </div>
-          <form action="#">
+          <form on:submit={handleSubscribe}>
             <div
               class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0 space-x-2"
             >
@@ -177,18 +223,20 @@
                   >
                 </div>
                 <input
-                  class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500"
+                  class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-orange-500 focus:border-orange-500"
                   placeholder="Inserisci la tua mail"
                   type="email"
                   id="email"
+                  bind:value={email}
                   required
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  class="py-3 px-5 w-full text-sm font-medium text-center text-black rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
-                  >Iscriviti</button
+                  disabled={isSubmitting}
+                  class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-orange-700 border-orange-600 sm:rounded-none sm:rounded-r-lg hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >{isSubmitting ? "Invio..." : "Iscriviti"}</button
                 >
               </div>
             </div>
@@ -197,7 +245,7 @@
             >
               Abbiamo a cuore la protezione dei vostri dati. <a
                 href="/privacy"
-                class="font-medium text-primary-600 hover:underline"
+                class="font-medium text-orange-600 hover:underline"
                 >Leggi la nostra Privacy Policy</a
               >.
             </div>

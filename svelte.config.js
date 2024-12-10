@@ -13,13 +13,29 @@ export default {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: 'index.html',
+      fallback: null,
       precompress: false,
-      strict: false
+      strict: true
     }),
+    prerender: {
+      entries: [
+        '*',
+        '/who',
+        '/team',
+        '/media',
+        '/invest',
+        '/legal',
+        '/privacy',
+        '/contact'
+      ],
+      handleHttpError: ({ path, referrer, message }) => {
+        if (message.includes('Not found')) return;
+        throw new Error(message);
+      }
+    },
     appDir: 'app',
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/vitejs-vite-ltqw6f' : ''
+      base: ''
     }
   }
 }

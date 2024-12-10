@@ -1,181 +1,108 @@
 <script>
+  const currentYear = new Date().getFullYear();
+
+  const links = {
+    company: [
+      { name: "Chi Siamo", href: "/who" },
+      { name: "Team", href: "/team" },
+      { name: "Contattaci", href: "/contact" },
+    ],
+    legal: [
+      { name: "Privacy Policy", href: "/privacy" },
+      { name: "Termini e Condizioni", href: "/legal" },
+    ],
+    social: [
+      {
+        name: "Instagram",
+        href: "https://www.instagram.com/whynotapp2024/",
+        icon: "fab fa-instagram",
+      },
+      {
+        name: "YouTube",
+        href: "https://www.youtube.com/whynotapp2024/",
+        icon: "fab fa-youtube",
+      },
+    ],
+  };
 </script>
 
-<div style="background-color:#e95f3b">
-  <div class="footer">
-    <div class="footer_logo">
-      <img src="public/logo.png" alt="logo" height="30" width="90" />
-    </div>
-    <div class="footer_grid flex-col">
-      <div class="footer_grid_col grid_col">
-        <ul class="footer_grid_content">
-          <li><a href="/collaboration/">Collabora con noi</a></li>
-          <li>
-            <a href="/personalized-solutions/">Soluzioni personalizzate</a>
-          </li>
-          <li><a href="/legal/">Legal</a></li>
-          <li><a href="/privacy/">Privacy</a></li>
+<footer class="bg-[#e95f3b]">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="py-16 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Brand Column -->
+      <div class="space-y-8">
+        <img
+          src="public/logo.png"
+          alt="WhyNot Logo"
+          class="h-8 w-auto brightness-0 invert"
+        />
+        <p class="text-white/80 text-sm">
+          Rivoluzionando il modo in cui gestiamo gli scontrini, un passo alla
+          volta verso un futuro più sostenibile.
+        </p>
+        <div class="flex space-x-4">
+          {#each links.social as { href, icon }}
+            <a
+              {href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:text-white/80 text-2xl transition-colors"
+            >
+              <i class={icon}></i>
+            </a>
+          {/each}
+        </div>
+      </div>
+
+      <!-- Links Columns -->
+      <div class="space-y-4">
+        <h3 class="text-white font-semibold uppercase tracking-wider text-sm">
+          Azienda
+        </h3>
+        <ul class="space-y-3">
+          {#each links.company as { name, href }}
+            <li>
+              <a
+                {href}
+                class="text-white/80 hover:text-white text-sm transition-colors"
+              >
+                {name}
+              </a>
+            </li>
+          {/each}
         </ul>
       </div>
+
+      <div class="space-y-4">
+        <h3 class="text-white font-semibold uppercase tracking-wider text-sm">
+          Legale
+        </h3>
+        <ul class="space-y-3">
+          {#each links.legal as { name, href }}
+            <li>
+              <a
+                {href}
+                class="text-white/80 hover:text-white text-sm transition-colors"
+              >
+                {name}
+              </a>
+            </li>
+          {/each}
+        </ul>
+      </div>
+
     </div>
-    <div class="footer_line"></div>
-    <div class="footer_socials">
-      <ul>
-        <a
-          target="_blank"
-          href="https://www.youtube.com/whynotapp2024/"
-          class="text-white hover:text-white/50"
-        >
-          <li class="fab fa-youtube"></li>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/whynotapp2024/"
-          class="text-white hover:text-white/50"
-        >
-          <li class="fab fa-instagram"></li>
-        </a>
-        <!-- <li class="fab fa-facebook">
-          <a target="_blank" href="https://www.facebook.com//"> </a>
-        </li>
-        <li class="fab fa-twitter">
-          <a target="_blank" href="https://twitter.com//"> </a>
-        </li>
-        <li class="fab fa-linkedin">
-          <a target="_blank" href="https://www.linkedin.com/company//"> </a>
-        </li> -->
-      </ul>
-    </div>
-    <div class="footer_text">
-      <p>Whynot Italia S.r.l - P.IVA 1234567890 - Via dei Pupi, 1 - 30172</p>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p> -->
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10 py-8">
+      <div class="text-center sm:flex sm:justify-between sm:text-left">
+        <p class="text-white/60 text-sm">
+          © {currentYear} WhyNot. Tutti i diritti riservati.
+        </p>
+        <p class="text-white/60 text-sm mt-2 sm:mt-0">
+          whynotapp.it - Via dei Pupi, 1 (VE) - 30172
+        </p>
+      </div>
     </div>
   </div>
-</div>
-
-<style>
-  @media (min-width: 1200px) {
-    .footer {
-      width: 1140px;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .footer {
-      width: 960px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .footer {
-      width: 720px;
-      padding-top: 0px;
-      padding-bottom: 1.2rem;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-    .grid_col {
-      flex-basis: 0px;
-      -webkit-box-flex: 1;
-      flex-grow: 1;
-      max-width: 100%;
-    }
-  }
-
-  .grid_col {
-    position: relative;
-    width: 100%;
-    text-align: center;
-  }
-
-  @media (min-width: 576px) {
-    .footer {
-      width: 540px;
-    }
-  }
-
-  .footer_logo {
-    padding: 30px 0 0 0;
-  }
-
-  .footer_logo img {
-    filter: brightness(0%) invert(1);
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px 2rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
-    color: white;
-    user-select: none;
-  }
-
-  .footer_grid {
-    display: flex;
-    margin-top: -24px;
-    /* margin-inline: -15px; */
-    padding-top: 1.5rem;
-  }
-
-  .footer_grid_col {
-    margin-top: 14px;
-    padding-inline: 15px;
-  }
-
-  .footer_grid_title {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-  }
-
-  .footer_grid_content {
-    font-size: 1rem;
-    list-style: none;
-    padding-left: 0px;
-    margin-bottom: 5px;
-  }
-
-  .footer_grid_content li {
-    margin: 8px 0;
-  }
-
-  .footer_grid_content li a {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: white !important;
-  }
-
-  .footer_line {
-    width: 50%;
-    height: 1px;
-    background-color: rgb(238, 238, 238);
-  }
-
-  .footer_text {
-    font-size: 0.7rem;
-  }
-
-  .footer_socials {
-    margin-top: 1rem;
-  }
-
-  .footer_socials ul li {
-    font-size: 30px;
-    padding: 0 10px;
-    /* margin: 15px 15px 0; */
-    cursor: pointer;
-  }
-
-  @media (min-width: 1200px) {
-    .footer {
-      width: 1140px;
-    }
-  }
-</style>
+</footer>

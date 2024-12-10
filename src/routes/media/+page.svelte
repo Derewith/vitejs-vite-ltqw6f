@@ -1,13 +1,42 @@
-<section class="bg-brandbg">
-  <div
-    class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 gap-2 animate-jump-in animate-delay-500"
-  >
-    <div class="mr-auto place-self-center lg:col-span-7">
-      <h1
-        class="inter-font max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
-      >
-        MEDIA PAGE
-      </h1>
+<script>
+  const mediaItems = [
+    {
+      title: 'Comunicato Stampa 2024',
+      date: '15 Gennaio 2024',
+      description: 'Ultime novità e sviluppi della nostra azienda',
+      type: 'press'
+    },
+    {
+      title: 'Intervista al CEO',
+      date: '10 Gennaio 2024',
+      description: 'Intervista esclusiva sul futuro dell\'azienda',
+      type: 'video'
+    },
+    {
+      title: 'Report Annuale',
+      date: '1 Gennaio 2024',
+      description: 'Risultati e obiettivi raggiunti nel 2023',
+      type: 'report'
+    }
+  ];
+</script>
+
+<section class="bg-brandbg py-16">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center mb-12">Media Center</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {#each mediaItems as item}
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="mb-4">
+            <span class="text-sm text-gray-500">{item.date}</span>
+            <h3 class="text-xl font-semibold mt-2">{item.title}</h3>
+          </div>
+          <p class="text-gray-600 mb-4">{item.description}</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Leggi di più
+          </button>
+        </div>
+      {/each}
     </div>
   </div>
 </section>
