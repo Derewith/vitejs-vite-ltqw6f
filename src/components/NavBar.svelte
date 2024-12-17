@@ -1,4 +1,5 @@
 <script>
+  import { afterNavigate } from "$app/navigation";
   let isOpen = false;
   let showNewsletter = false;
 
@@ -10,9 +11,13 @@
     showNewsletter = !showNewsletter;
   }
 
+  afterNavigate(() => {
+    isOpen = false;
+  });
   // add a function tho show automatically the newsletter modal after 15seconds
 
   setTimeout(() => {
+    // if (window.localStorage.getItem("newsletter_subscribed")) return;
     showNewsletter = true;
   }, 15000);
 
@@ -36,11 +41,12 @@
         body: JSON.stringify({ email }),
       });
 
-      const data = await response.json();
-
       if (response.ok) {
         subscriptionStatus = "success";
         email = "";
+
+        // store a localstorage item to prevent the modal to show again
+        // window.localStorage.setItem("newsletter_subscribed", "true");
       } else {
         subscriptionStatus = "error";
       }
@@ -69,7 +75,7 @@
     </ul> -->
     <div class="flex items-center gap-2">
       <div class="menu-last">
-        <button class="mainbtn" on:click={toggleNewsletter}>Newsletter</button>
+        <a href="/support" class="mainbtn">Sostieni il progetto</a>
       </div>
       <button
         class="menu-btn"
@@ -96,6 +102,7 @@
     </div>
   </div>
 </nav>
+
 <div
   class={`fixed inset-y-0 right-0 transform ${
     isOpen ? "translate-x-0" : "translate-x-full"
@@ -110,7 +117,10 @@
       ✕
     </button>
   </div>
-  <ul class="font-medium flex flex-col p-4 mt-4" style="border-radius: 0px;">
+  <ul
+    class="font-medium flex flex-col mt-4 pt-8 p-4"
+    style="border-radius: 0px;"
+  >
     <li>
       <a href="/" class="block py-2 px-3 rounded" aria-current="page">Home</a>
     </li>
@@ -140,6 +150,13 @@
         href="/team"
         class="block py-2 px-3 text-gray-900 rounded hover:border hover:border-brand"
         >Team</a
+      >
+    </li> -->
+    <!-- <li>
+      <a
+        href="/support"
+        class="block py-2 px-3 text-gray-900 rounded hover:border hover:border-brand"
+        >Sostienici</a
       >
     </li> -->
     <li>

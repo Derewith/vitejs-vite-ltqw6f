@@ -3,17 +3,7 @@
   import { onMount } from "svelte";
 
   import Swiper from "swiper";
-  import {
-    Autoplay,
-    EffectCards,
-    EffectCoverflow,
-    EffectCreative,
-    EffectCube,
-    EffectFade,
-    EffectFlip,
-    Navigation,
-    Pagination,
-  } from "swiper/modules";
+  import { Autoplay, Navigation, Pagination } from "swiper/modules";
   import "swiper/css";
   import "swiper/css/navigation";
   import "swiper/css/pagination";
@@ -119,10 +109,10 @@
                   nel mondo? Quanti ne servirebbero realmente?
                 </p>
                 <!-- <a
-                  href="/contact"
+                  href="/support"
                   class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto bg-white"
                 >
-                  Contatta i nostri Venditori
+                  Sostieni questo progetto
                 </a> -->
               </div>
               <div class="">
@@ -151,7 +141,14 @@
                   equivale a circa 1m di scontrini risparmiati solo e soltanto
                   grazie al tuo contributo.
                 </p>
+                <!-- <a
+                  href="/support"
+                  class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto bg-white"
+                >
+                  Sostieni questo progetto
+                </a> -->
               </div>
+
               <div class="">
                 <img
                   src="./public/main.png"
@@ -177,6 +174,12 @@
                   Gran parte dei quali sono scontrini di bar o supermercati,
                   presi in mano e subito dopo gettati nel cestino.
                 </p>
+                <!-- <a
+                  href="/support"
+                  class="inter-font inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-full md:w-auto bg-white"
+                >
+                  Sostieni questo progetto
+                </a> -->
               </div>
               <div class="">
                 <img
@@ -191,44 +194,6 @@
       </div>
     </div>
   </div>
-</div>
-
-<div class="wrapper-inside lg:flex-row-reverse mt-4 mx-8 bg-brandbg gap-6">
-  <div
-    class="flex flex-col lg:flex-row gap-4 justify-between w-full bg-brandbg pt-4"
-  >
-    <div class="h-full flex flex-col justify-center">
-      <h2
-        class="inter-font text-xl font-extrabold md:text-2xl xl:text-5xl md:text-left"
-      >
-        Unisciti a WhyNot: Sostieni la Rivoluzione Verde! 🌍
-      </h2>
-      <div class="md:text-left mx-auto mb-8 max-w-2xl font-light mt-4">
-        <p>
-          Ogni giorno vengono sprecati chilometri di carta per gli scontrini, ma
-          con WhyNot possiamo cambiarlo. Aiutaci a portare questa app innovativa
-          nelle mani di tutti: salva gli scontrini digitalmente, riduci
-          l’impatto ambientale e guadagna Punti Foresta per sconti e premi
-          ecologici.
-        </p>
-        <p>
-          Sostieni la nostra campagna di crowdfunding e insieme costruiremo un
-          futuro più sostenibile. Ogni contributo conta per rendere WhyNot la
-          scelta digitale per milioni di persone.
-        </p>
-        <p>Fai la tua parte. Scarica WhyNot.</p>
-        Sostieni la nostra campagna di crowdfunding e insieme costruiamo un futuro
-        senza sprechi!
-      </div>
-    </div>
-  </div>
-  <iframe
-    title="WhyNot"
-    class="relative w-full max-w-screen-xl bg-brandbg py-4 min-h-[600px] md:min-h-[700px] lg:min-h-[550px] mx-auto"
-    src="https://www.produzionidalbasso.com/projects/36967/widget"
-    frameborder="0"
-    style="width:800px;"
-  ></iframe>
 </div>
 
 <section class="my-6">
@@ -393,13 +358,11 @@
 </section> -->
 
 <style lang="postcss">
-  /* Personalizza i colori dei bottoni di navigazione */
   :global(.swiper-button-next),
   :global(.swiper-button-prev) {
     @apply text-gray-800 hover:text-black transition-colors;
   }
 
-  /* Personalizza i pallini della paginazione */
   :global(.swiper-pagination-bullet) {
     @apply bg-gray-300 opacity-100;
   }
@@ -408,7 +371,6 @@
     @apply bg-gray-800;
   }
 
-  /* Assicurati che le slide abbiano la stessa altezza */
   :global(.swiper-slide) {
     height: auto !important;
   }
