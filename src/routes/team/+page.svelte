@@ -23,7 +23,7 @@
   ];
 </script>
 
-<section class="bg-brandbg py-16">
+<!-- <section class="bg-brandbg py-16">
   <div class="container mx-auto px-4">
     <h1 class="text-4xl font-bold text-center mb-12">Il Nostro Team</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -42,4 +42,4 @@
       {/each}
     </div>
   </div>
-</section>
+</section> -->

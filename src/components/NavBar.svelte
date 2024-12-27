@@ -75,7 +75,7 @@
     </ul> -->
     <div class="flex items-center gap-2">
       <div class="menu-last">
-        <a href="/support" class="mainbtn">Sostieni il progetto</a>
+        <a href="/support" class="mainbtn">Sostieni il progetto 💰</a>
       </div>
       <button
         class="menu-btn"
@@ -152,13 +152,13 @@
         >Team</a
       >
     </li> -->
-    <!-- <li>
+    <li>
       <a
         href="/support"
         class="block py-2 px-3 text-gray-900 rounded hover:border hover:border-brand"
-        >Sostienici</a
+        >Sostieni il Progetto 💰</a
       >
-    </li> -->
+    </li>
     <li>
       <a
         href="/contact"

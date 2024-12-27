@@ -4,7 +4,7 @@
   const links = {
     company: [
       { name: "Chi Siamo", href: "/who" },
-      { name: "Team", href: "/team" },
+      // { name: "Team", href: "/team" },
       { name: "Contattaci", href: "/contact" },
     ],
     legal: [
